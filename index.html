@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sister's Day for CutiePie Is Live</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(135deg, #ffb6c1, #ffc0cb);
+      font-family: 'Quicksand', sans-serif;
+      overflow-x: hidden;
+    }
+    .header {
+      text-align: center;
+      padding: 40px 20px;
+      color: #fff;
+      font-family: 'Pacifico', cursive;
+      font-size: 3rem;
+      animation: bounce 2s infinite;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+    .content {
+      text-align: center;
+      padding: 30px;
+      color: #4b2c2c;
+      font-size: 1.3rem;
+      animation: fadeIn 3s ease-in-out;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .cute-animals {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 20px;
+      gap: 20px;
+    }
+    .animal {
+      width: 150px;
+      height: 150px;
+      background-color: #fff0f5;
+      border-radius: 20px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      transition: transform 0.4s ease;
+    }
+    .animal:hover {
+      transform: scale(1.1);
+    }
+    .animal img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .surprise-button {
+      margin-top: 40px;
+      padding: 12px 24px;
+      font-size: 1.2rem;
+      background: #ff69b4;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+    .surprise-box {
+      display: none;
+      margin-top: 20px;
+      font-size: 1.2rem;
+      color: #d63384;
+      background: #fff0f5;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    footer {
+      margin-top: 50px;
+      padding: 20px;
+      text-align: center;
+      background: #ffe6f0;
+      color: #b30059;
+      font-family: 'Pacifico', cursive;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">Happy Sister's Day, CutiePie Is Live! 🎀</div>
+
+  <div class="content">
+    You’re not just a sister, you’re my favorite human panda with the kindest heart 💖<br />
+    Today is all about celebrating YOU and your cute Minecraft adventures 🐾🌸
+  </div>
+
+  <div class="cute-animals">
+    <div class="animal"><img src="https://yt3.ggpht.com/N-3NvFuEgQzGlONUiZvAYp_x7I6PjoAAxGC10ZmILEpLUZ2hePL_i_p3OSg0PIfL-v7E7MwHqkE=s176-c-k-c0x00ffffff-no-rj-mo" alt="Cute Panda"></div>
+    <div class="animal"><img src="https://media.discordapp.net/attachments/1396907504255897610/1401040369881190573/image.png?ex=688ed406&is=688d8286&hm=ce91dc7dd3b1a190dfdb633dd7ac02a112b14194948ce19e18cd6f5c4c8d8374&=&format=webp&quality=lossless" alt="Cute Cat"></div>
+    <div class="animal"><img src="https://cdn.discordapp.com/icons/1083044968983187466/bfe4cbdc98b8c03e5a22da18f0cffc97.webp?size=1024" alt="Cute Bunny"></div>
+  </div>
+
+  <div style="text-align:center">
+    <button class="surprise-button" onclick="showSurprise()">Click Me for a Surprise! 🎁</button>
+    <div class="surprise-box" id="surpriseBox">
+      🥳 You're the most awesome, creative, and loving sister ever! Keep shining bright like the star you are 🌟<br>
+      
+    </div>
+  </div>
+
+  <footer>
+    Made with ❤️ and Pandas by Alwayzzz for CutiePie 🌸
+  </footer>
+
+  <script>
+    function showSurprise() {
+      const box = document.getElementById('surpriseBox');
+      box.style.display = 'block';
+    }
+  </script>
+</body>
+</html>
